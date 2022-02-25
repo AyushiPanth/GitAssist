@@ -1,9 +1,45 @@
 {%extends 'base.html'%}
 {%load static%}
 {%block headtag%}
+
 <title>Homepage</title>
+<style>
+
+.centered {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+}
+</style>
+
 {%endblock%}
 
 {%block content%}
-<img style="width:20%" src="{%static '\images\background.png'%}">
+<div><img style="width: 30%" src="{%static '\images\background.png'%}"></div>
+<div class="centered">
+  <h1>GitAssist </h1>
+  <h3>GitHub Recommendation System </h3>
+</div>
+
+<!-- <header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">HOME</a>
+
+    <div class="collapse navbar-collapse" id="navbarText" style="float: right">
+      <ul class="navbar-nav mr-auto">
+        <span style="display:inline; width: 1px;">
+          <li class="nav-item"  >
+            <a class="nav-link" href="#">Find Projects </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Find Contributors</a>
+          </li></span>
+
+      </ul>
+
+    </div>
+  </nav>
+</header> -->
+<!-- <img src="{%static '\images\bg.png'%}"> -->
 {%endblock%}
